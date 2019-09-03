@@ -7,6 +7,7 @@ object Dependencies {
   }
   object LWJGL {
     private val version = "3.2.3"
-    val lwjgl = "org.lwjgl" % "lwjgl" % version
+    val core = "org.lwjgl" % "lwjgl" % version
+    val glfw = "org.lwjgl" % "lwjgl-glfw" % version
   }
 }

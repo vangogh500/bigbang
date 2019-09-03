@@ -22,6 +22,10 @@ lazy val windows = project
   .settings(
     name := "windows",
     libraryDependencies ++= Seq(
-      Dependencies.LWJGL.lwjgl
-    )
+      Dependencies.LWJGL.core,
+      Dependencies.LWJGL.glfw
+    ).flatMap(module => Seq(
+      module,
+      module classifier "natives-windows"
+    ))
   )
