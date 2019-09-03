@@ -1,0 +1,1 @@
+resolvers += "lwjgl" at "https://mvnrepository.com/artifact/org.lwjgl/lwjgl"
